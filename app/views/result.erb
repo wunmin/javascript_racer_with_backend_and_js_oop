@@ -1,0 +1,14 @@
+<h1>The winner of the game is <%= @winner.name %></h1>
+
+<p><%= @player1.player.name %></p>
+<table class="racer_table">
+  <tr id="row1">
+    <% 30.times do |i| %>
+      <td class="<%= 'active' if @player1.final_position == i %>"></td>
+    <% end %>
+  </tr id="row2">
+    <% 30.times do |i|%>
+      <td class="<%= 'active' if @player2.final_position == i %>"></td>
+    <% end %>
+</table>
+<p><%= @player2.player.name %></p>

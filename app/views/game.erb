@@ -1,0 +1,19 @@
+<head>
+  <script src="/js/application.js"></script>
+</head>
+<h1 id="game" data-game-id=<%= @game.id %>>Welcome to Javascript Racer</h1>
+
+<p><%= @player1.name %></p>
+<table class="racer_table">
+  <tr id="row1">
+    <% 30.times do %>
+      <td></td>
+    <% end %>
+  </tr>
+  <tr id="row2">
+    <% 30.times do %>
+      <td></td>
+    <% end %>
+  </tr>
+</table>
+<p><%= @player2.name %></p>
